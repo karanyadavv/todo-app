@@ -26,6 +26,7 @@ body{
   height: 70vh;
   border-radius: 10px;
   overflow: auto;
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 

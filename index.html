@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Todo App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="centered-container">
+    <div class="entire-canvas">
+
+      <header>
+        Todo App
+      </header>
+  
+      <div class="input">
+        <input type="text" placeholder="Add your new todo" class="js-todo-name input-lm" required/>
+        <button class="add-button" onclick="addTodos();">&#x2b;</button>
+      </div>
+  
+  
+      <div class="js-todo-list todo-list">
+      </div>
+  
+      <footer>
+        <p class="js-pending-task pending-task">You have 0 pending tasks</p>
+        <button class="clear-all-button" onclick="clearAll();">Clear All</button>
+      </footer>
+    </div>
+  </div>
+  
+
+    <script src="script.js"></script>
+
+</body>
+</html>

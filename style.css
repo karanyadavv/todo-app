@@ -1,0 +1,233 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #69e7cf, #497ee4);
+  margin: 0;
+  padding: 0;
+}
+
+
+.centered-container {
+  /* Make it full viewport height and width */
+  height: 100vh;
+  width: 100vw;
+
+  /* Center the content horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.entire-canvas{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  height: 70vh;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+
+.entire-canvas::-webkit-scrollbar {
+  width: 0; /* Hide the scrollbar for Webkit browsers (Chrome, Safari) */
+  display: none; /* Hide the scrollbar for Firefox */
+}
+
+@media (max-width: 1000px) {
+  /* Override styles for .entire-canvas on mobile devices */
+  .entire-canvas {
+      width: 90vw;
+      height: 80vh;
+  }
+}
+
+
+header{
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 6% 52% 2% 2%;
+}
+
+@media (max-width: 1000px) {
+  /* Override styles for .entire-canvas on mobile devices */
+  header {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 6% 40% 2% 20%;
+    white-space: nowrap;
+  }
+}
+
+
+.input{
+  margin: 0% 2% 2% 2%;
+}
+
+.input-lm{
+  height: 7vh;
+  width: 22.5vw;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  /* Override styles for .entire-canvas on mobile devices */
+  .input-lm {
+    height: 5vh;
+    width: 68vw;
+    border: 3px solid #ebebeb;
+  }
+}
+
+
+.input-lm::placeholder {
+  color: #9b999a;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  padding: 4% 0% 0% 4%;
+}
+
+
+
+.add-button{
+  height: 6.8vh;
+  width: 3.5vw;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #8e4be3;
+  color: white;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 1000px) {
+  .add-button{
+    height: 5vh;
+    width: 10vw;
+  }
+}
+
+.add-button:active{
+  transform: scale(0.95);
+}
+
+.todo-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+  margin-left: 6px;
+  margin-right: 16px;
+  padding: 0;
+}
+
+@media (max-width:1000px){
+  .todo-list{
+    gap: 1rem;
+  }
+}
+
+.todo-list-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.list-item{
+  background-color: #f3f1f4;
+  width: 23vw;
+  height: 7vh;
+  margin: 0px 0px 0px 8px;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  padding: 0% 0% 0% 4%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 1000px) {
+  .list-item{
+    height: 5vh;
+    width: 69vw;
+  }
+}
+
+.delete-button{
+  font-size: 1rem;
+  background-color: #e54e3b;
+  border: none;
+  height: 6.8vh;
+  width: 3.5vw;
+  padding: 9px 9px 9px 9px;
+  margin: 0% 0% 0% 0%;
+  cursor: pointer;
+  border-radius: 0 10% 10% 0;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .delete-button{
+    height: 5vh;
+    width: 10vw;
+  }
+}
+
+.delete-button:active{
+  transform: scale(0.95);
+}
+
+.delete-button img{
+  width: 1.5rem;
+}
+
+
+footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 28%;
+  max-width: 27vw;
+  margin-top: 0.6rem;
+}
+
+.pending-task{
+  white-space: nowrap;
+}
+
+.clear-all-button{
+  border: none;
+  background-color: #8e4be3;
+  color: white;
+  height: 6vh;
+  width: 6vw;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: -5px -5px -5px -5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: transform 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:1000px){
+  .clear-all-button{
+    height: 4vh;
+    width: 20vw;
+  }
+}
+
+.clear-all-button:active{
+  transform: scale(0.95);
+}
